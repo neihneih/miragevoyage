@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Réservation</title>
+</head>
+<body>
+    <nav>
+        <ol>
+            <li><a href="catalogue.html">Catalogue</a></li>
+            <li><a href="apropos.html">A propos</a></li>
+            <li><a href="connexion.html">Connexion</a></li>
+            <li><a href="accueil.html"><img src="../images/mv.png" alt="pas de caddie"></a></li>
+            <li><a href="panier.html">Panier</a></li>
+        </ol>
+    </nav>
+    <form>
+        <fieldset>
+            <legend>Informations personnelles</legend>
+            Les champs munis de * sont obligatoires.<br><br>
+            Nom* :<br>
+            <input type="text" name="nom" required><br>
+            Prénom* :<br>
+            <input type="text" name="prenom" required><br>
+            Mail* :<br>
+            <input type="email" name="mail" required><br>
+            Téléphone :<br>
+            <input type="tel" name="tel"><br>
+        </fieldset><br>
+        <fieldset>
+            <legend>Informations du séjour</legend>
+            Date de départ* :<br>
+            <input type="date" name="date_depart" required><br>
+            Date de retour* :<br>
+            <input type="date" name="date_retour" required><br>
+            Nombre d'adultes* :<br>
+            <input type="text" name="nombre_adultes" required><br>
+            Nombre d'enfants* :<br>
+            <input type="text" name="nombre_enfants" required><br>
+            Petit-déjeuner (12€ par personne et par jour) : 
+            <input type="checkbox" name="petit_dej"><br>
+        </fieldset><br>
+        <fieldset>
+            Informations complémentaires :<br>
+        <textarea value="Une question" form="form_renseignement">Une question ?</textarea><br>
+        </fieldset>
+        <input type="submit" value="Valider">
+        <input type="reset" value="Effacer"><br>
+
+    </form>
+</body>
+</html>
